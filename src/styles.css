@@ -1,0 +1,61 @@
+/* src/styles.css */
+
+/* General Styles */
+body {
+    background: url('/matrix.gif') no-repeat center center fixed;
+    background-size: cover; /* Makes sure the GIF covers the whole screen */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adds some shadow to make text more readable */
+  }
+  
+  /* Container Styles */
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency so background is visible */
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Chart Styling */
+  .plotly-chart {
+    width: 100%;
+    height: 500px;
+    border-radius: 1rem;
+    margin-top: 1rem; /* Add space between heading and chart */
+  }
+  
+  /* Add responsive design */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 2rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .plotly-chart {
+      height: 400px;
+    }
+  }
+  
